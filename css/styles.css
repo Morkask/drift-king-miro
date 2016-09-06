@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#canvas{
+	background-color: black;	
+}
+canvas{
+	position:absolute;
+	top:0;
+	left:0;
+	width:800px;
+	height:600px;
+	border-style:solid; 
+	border-width:2px;
+	
+}
+
+H1{
+	position:absolute;
+	top:40px;
+	left:298px;
+	font-size: 20px;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+}
+
+form{
+	position:absolute;
+	top:70px;
+	left:300px;
+	border-style:solid; 
+	border-color: white;
+	border-width:2px;
+	padding:2px;
+}
+
+
+
