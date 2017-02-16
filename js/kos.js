@@ -4,7 +4,7 @@ function kos(x, y) {
     this.width= 80;
 	this.height= 118;
 	kosIMG = new Image();
-	kosIMG.src = '../img/objects/kos.png';
+	kosIMG.src = 'img/objects/kos.png';
 
     this.render = function(){
     	obj.drawImage(kosIMG, this.x, this.y, this.width, this.height);

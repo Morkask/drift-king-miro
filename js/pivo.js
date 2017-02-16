@@ -4,9 +4,9 @@ function pivo(x, y) {
     this.width= 60;
 	this.height= 72;
 	pivoIMG = new Image();
-	pivoIMG.src = '../img/objects/pivo.png';
+	pivoIMG.src = 'img/objects/pivo.png';
 	vybuch = new Image();
-	vybuch.src = '../img/objects/vybuch.png';
+	vybuch.src = 'img/objects/vybuch.png';
 
     this.render = function(){
     	obj.drawImage(pivoIMG, this.x, this.y, this.width, this.height);

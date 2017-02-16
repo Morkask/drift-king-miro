@@ -4,7 +4,7 @@ function strela(x, y) {
     this.width= 10;
 	this.height= 30;
 	gunshotIMG = new Image();
-	gunshotIMG.src = '../img/objects/gunshot.png';
+	gunshotIMG.src = 'img/objects/gunshot.png';
 	this.speed=10;
 
     this.render = function(){

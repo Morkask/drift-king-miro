@@ -4,7 +4,7 @@ function alien(x, y) {
     this.width= 80;
 	this.height= 40;
 	alienIMG = new Image();
-	alienIMG.src = '../img/objects/alien.png';
+	alienIMG.src = 'img/objects/alien.png';
 
     this.render = function(){
     	obj.drawImage(alienIMG, this.x, this.y, this.width, this.height);

@@ -4,7 +4,7 @@ function zivot(x, y) {
     this.width= 80;
 	this.height= 72;
 	heartIMG = new Image();
-	heartIMG.src = '../img/objects/heart.png';
+	heartIMG.src = 'img/objects/heart.png';
 	
     this.render = function(){
     	obj.drawImage(heartIMG, this.x, this.y, this.width, this.height);

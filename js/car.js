@@ -48,33 +48,33 @@ var car={
 	render: function(){
 		if(selectCAR=="FORD ESCORT"){
 			carIMG = new Image();
-			carIMG.src = '../img/objects/carBLUE/car.png';
+			carIMG.src = 'img/objects/carBLUE/car.png';
 			carIMGb = new Image();
-			carIMGb.src = '../img/objects/carBLUE/car-breaks.png';
+			carIMGb.src = 'img/objects/carBLUE/car-breaks.png';
 			carIMGl = new Image();
-			carIMGl.src = '../img/objects/carBLUE/car-left.png';
+			carIMGl.src = 'img/objects/carBLUE/car-left.png';
 			carIMGr = new Image();
-			carIMGr.src = '../img/objects/carBLUE/car-right.png';
+			carIMGr.src = 'img/objects/carBLUE/car-right.png';
 		}
 		else if(selectCAR=="FELICIA PICKUP"){
 			carIMG = new Image();
-			carIMG.src = '../img/objects/carRED/car.png';
+			carIMG.src = 'img/objects/carRED/car.png';
 			carIMGb = new Image();
-			carIMGb.src = '../img/objects/carRED/car-breaks.png';
+			carIMGb.src = 'img/objects/carRED/car-breaks.png';
 			carIMGl = new Image();
-			carIMGl.src = '../img/objects/carRED/car-left.png';
+			carIMGl.src = 'img/objects/carRED/car-left.png';
 			carIMGr = new Image();
-			carIMGr.src = '../img/objects/carRED/car-right.png';
+			carIMGr.src = 'img/objects/carRED/car-right.png';
 		}
 		else if(selectCAR=="JAWA MOSQUIT"){
 			carIMG = new Image();
-			carIMG.src = '../img/objects/carBLACK/car.png';
+			carIMG.src = 'img/objects/carBLACK/car.png';
 			carIMGb = new Image();
-			carIMGb.src = '../img/objects/carBLACK/car-breaks.png';
+			carIMGb.src = 'img/objects/carBLACK/car-breaks.png';
 			carIMGl = new Image();
-			carIMGl.src = '../img/objects/carBLACK/car-left.png';
+			carIMGl.src = 'img/objects/carBLACK/car-left.png';
 			carIMGr = new Image();
-			carIMGr.src = '../img/objects/carBLACK/car-right.png';
+			carIMGr.src = 'img/objects/carBLACK/car-right.png';
 		}
 		if(this.brzdi==1)
 			obj.drawImage(carIMGb, this.x, this.y, this.width, this.height);

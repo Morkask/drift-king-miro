@@ -4,7 +4,7 @@ function bonus(x, y) {
     this.width= 80;
 	this.height= 100;
 	bonusIMG = new Image();
-	bonusIMG.src = '../img/objects/bonus.png';
+	bonusIMG.src = 'img/objects/bonus.png';
 	
     this.render = function(){
     	obj.drawImage(bonusIMG, this.x, this.y, this.width, this.height);

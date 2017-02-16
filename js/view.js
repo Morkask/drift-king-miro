@@ -21,23 +21,23 @@ function vykreslenie(){
 		if(selectCAR=="FORD ESCORT"){
 			GUI.fillStyle = "blue";
 			carIMG = new Image();
-			carIMG.src = '../img/objects/carBLUE/car.png';
+			carIMG.src = 'img/objects/carBLUE/car.png';
 			carLOGO=new Image();
-			carLOGO.src= '../img/logoFORD.png';
+			carLOGO.src= 'img/logoFORD.png';
 		}
 		if(selectCAR=="FELICIA PICKUP"){
 			GUI.fillStyle = "white";
 			carIMG = new Image();
-			carIMG.src = '../img/objects/carRED/car.png';
+			carIMG.src = 'img/objects/carRED/car.png';
 			carLOGO=new Image();
-			carLOGO.src= '../img/logoSKODA.png';
+			carLOGO.src= 'img/logoSKODA.png';
 		}
 		if(selectCAR=="JAWA MOSQUIT"){
 			GUI.fillStyle = "red";
 			carIMG = new Image();
-			carIMG.src = '../img/objects/carBLACK/car.png';
+			carIMG.src = 'img/objects/carBLACK/car.png';
 			carLOGO=new Image();
-			carLOGO.src= '../img/logoJAWA.png';
+			carLOGO.src= 'img/logoJAWA.png';
 		}
 		GUI.fillText("CURRENT CAR IS: "+selectCAR, canvas.width/2, (canvas.height/2)-230);
 		obj.drawImage(carIMG, canvas.width/2-car.width/2, canvas.height/2-200, 70, 158);

@@ -24,11 +24,11 @@ intro.play();
 
 //Images
 ldng = new Image();
-ldng.src = '../img/backgrounds/loading.jpg';
+ldng.src = 'img/backgrounds/loading.jpg';
 gmover = new Image();
-gmover.src = '../img/backgrounds/gameover.jpg';
+gmover.src = 'img/backgrounds/gameover.jpg';
 roadTexture= new Image();
-roadTexture.src= '../img/backgrounds/road.jpg';
+roadTexture.src= 'img/backgrounds/road.jpg';
 
 //Premenne suvisiave s hrou
 var FPS = 60;

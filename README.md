@@ -1,5 +1,6 @@
 # Drift King Miro
 Small Canvas video game, developed as a school project. Based on HTML5, CSS, JavaScript and Canvas.
+[PLAY THIS GAME ONLINE!](http://beatsbysmith.com/dkm/)
 
 Source code & music: Daniel Kováč
 
