@@ -9,6 +9,13 @@ Source code & music: Daniel Kováč
 
 Graphics: awesome people from Internet, edited by Daniel Kováč
 
+## Controls:
+`W` or `↑` 	- UP
+`S` or `↓` 	- DOWN
+`A` or `←` 	- LEFT
+`D` or `→` 	- RIGHT
+`SPACE` 	- SHOOT
+
 ## Screenshots:
 ![alt tag](https://github.com/danecsvk/drift-king-miro/blob/master/screenshots/shot01.png)
 ![alt tag](https://github.com/danecsvk/drift-king-miro/blob/master/screenshots/shot02.png)

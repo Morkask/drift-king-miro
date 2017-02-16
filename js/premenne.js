@@ -39,7 +39,11 @@ var pocetItemov = 5;
 var speed = 5;
 var povodnaSpeed = speed;
 var selectCAR="FORD ESCORT";
-
+var hiScore = localStorage.getItem("hiscore");
+if(hiScore==null){
+	hiScore = 0;
+}
+var nowHi = false;
 //Polia objektov
 var artefakty = [];
 var itemy = [];

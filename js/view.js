@@ -72,8 +72,12 @@ function vykreslenie(){
 		GUI.clearRect(0, 0, canvas.width, canvas.height);
 		context.drawImage(gmover, 0, 0, canvas.width, canvas.height);
 		GUI.fillStyle = "#ca0000";
-		GUI.font = "bold 72px consolas";
+		GUI.font = "bold 45px consolas";
 		GUI.textAlign = "center";
+		if(nowHi){
+			GUI.fillText("NEW HI-SCORE!!!", canvas.width/2, (canvas.height/2)-200);
+		}
+		GUI.font = "bold 72px consolas";
 		GUI.fillText("GAME OVER MIRO", canvas.width/2, (canvas.height/2)-130);
 		GUI.fillStyle = "#00ffa8";
 		GUI.font = "bold 18px arial";
@@ -81,8 +85,9 @@ function vykreslenie(){
 		GUI.fillText("Press SPACE to start again.", canvas.width/2, (canvas.height/2)-105);
 		GUI.textAlign = "left";
 		GUI.fillStyle = "rgba(255, 93, 0, 0.87)";
-		GUI.font = "bold 50px consolas";
-		GUI.fillText("SCORE: "+Math.floor(car.score), canvas.width/2-20, (canvas.height/2)-50);
+		GUI.font = "bold 40px consolas";
+		GUI.fillText("SCORE: "+Math.floor(car.score), canvas.width/2+45, (canvas.height/2)-70);
+		GUI.fillText("HI-SCORE: "+Math.floor(hiScore), canvas.width/2-20, (canvas.height/2)-35);
 	}
 }
 
@@ -96,20 +101,21 @@ var GUIo={
 		GUI.fillStyle = "#00ffa8";
 		GUI.font = "bold 18px consolas";
 		if(car.gun>0){
-			GUI.fillText("GUN SHOTS: "+car.gun, 5, (canvas.height)-60);
+			GUI.fillText("GUN SHOTS: "+car.gun, 5, (canvas.height)-70);
 		}
 		GUI.fillStyle = "#00ffa8";
 		GUI.font = "bold 18px consolas";
-		GUI.fillText("LIVES: ", 5, (canvas.height)-40);
+		GUI.fillText("LIVES: ", 5, (canvas.height)-50);
 		for(i=0; i<car.lives;i++){
 			GUI.fillStyle = "red";
 			GUI.font = "bold 18px consolas";
-			GUI.fillText("♥ ", 65+i*12, (canvas.height)-40);
+			GUI.fillText("♥ ", 65+i*12, (canvas.height)-50);
 		}
 
 		GUI.fillStyle = "#00ffa8";
 		GUI.font = "bold 18px consolas";
-		GUI.fillText("SCORE:"+Math.floor(car.score), 5, (canvas.height)-20);
+		GUI.fillText("SCORE:"+Math.floor(car.score), 5, (canvas.height)-30);
+		GUI.fillText("HI-SCORE:"+Math.floor(hiScore), 5, (canvas.height)-10);
 	}
 };
 

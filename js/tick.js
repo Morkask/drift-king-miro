@@ -54,11 +54,17 @@ function tick(){
 			
 			bangr.pause();
 			car.lives=zivoty;
+			if(car.score>hiScore){
+				hiScore=car.score;
+				localStorage.setItem("hiscore", car.score);
+				nowHi = true;
+			}
 		}
 	}
 	if(stavHry=="gameover"){
 		outro.play();
 		if(Key.space == true){
+			nowHi=false;
 			Key.space = false;
 			stavHry = "instructions";
 			outro.pause();
