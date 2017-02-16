@@ -1,6 +1,6 @@
-# Drift King Miro
+# Drift King Miro - [PLAY NOW!](http://beatsbysmith.com/dkm/)
 
-[PLAY THIS GAME ONLINE!](http://beatsbysmith.com/dkm/)
+
 
 Small Canvas video game, developed as a school project. Based on HTML5, CSS, JavaScript and Canvas.
 
