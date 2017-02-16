@@ -11,9 +11,13 @@ Graphics: awesome people from Internet, edited by Daniel Kováč
 
 ## Controls:
 `W` or `↑` 	- UP
+
 `S` or `↓` 	- DOWN
+
 `A` or `←` 	- LEFT
+
 `D` or `→` 	- RIGHT
+
 `SPACE` 	- SHOOT
 
 ## Screenshots:
