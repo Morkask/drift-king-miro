@@ -1,86 +1,66 @@
-//Logika
-function tick(){
-	if(stavHry=="loading"){
-		for(i in artefakty){
-			artefakty[i].tick();
-		}
-		if(Key.space == true){
+function tick() {
+	if (gameState == "loading") {
+		if (Key.space == true) {
 			Key.space = false;
-			stavHry = "instructions";
+			gameState = "instructions";
 		}
 	}
-	if(stavHry == "instructions"){
-		for(i in artefakty){
-			artefakty[i].tick();
-		}
-		if(Key.space == true){
+	if (gameState == "instructions") {
+		if (Key.space == true) {
 			Key.space = false;
-			stavHry = "hra";
+			gameState = "ingame";
 		}
-		if(Key.space == true){
+		if (Key.space == true) {
 			Key.space = false;
-			stavHry = "hra";
+			gameState = "ingame";
 		}
-		if(Key.keyX == true){
+		if (Key.keyX == true) {
 			Key.keyX = false;
-			selectCAR = "FORD ESCORT";
+			selectedCar = "FORD ESCORT";
 		}
-		if(Key.keyC == true){
+		if (Key.keyC == true) {
 			Key.keyC = false;
-			selectCAR = "FELICIA PICKUP";
+			selectedCar = "FELICIA PICKUP";
 		}
-		if(Key.keyV == true){
+		if (Key.keyV == true) {
 			Key.keyV = false;
-			selectCAR = "JAWA MOSQUIT";
+			selectedCar = "JAWA MOSQUIT";
 		}
 	}
-	if(stavHry=="hra"){
-		intro.pause();
-		bangr.loop = true;
-		bangr.play();
-		car.tick();
-		for(i in itemy){
-			itemy[i].tick();
+	if (gameState == "ingame") {
+		audioMain.loop = true;
+		audioMain.play();
+		carObject.tick();
+		for (i in gameObjects) {
+			gameObjects[i].tick();
 		}
-		if(Key.space == true)
-			car.shoot();
-		for(i in gunshots)
-			gunshots[i].tick();
-		GUIo.tick();
-		road.tick();
-		if(car.lives<1){
-			outro.currentTime = 0;
-			stavHry="gameover";
-			
-			bangr.pause();
-			car.lives=zivoty;
-			if(car.score>hiScore){
-				hiScore=car.score;
-				localStorage.setItem("hiscore", car.score);
-				nowHi = true;
+		if (Key.space == true) {
+			carObject.shoot();
+		}
+		for (i in gunShots) {
+			gunShots[i].tick();
+		}
+		roadObject.tick();
+		if (carObject.lives < 1) {
+			audioOutro.currentTime = 0;
+			gameState = "gameover";
+
+			audioMain.pause();
+			carObject.lives = numberOfLives;
+			if (carObject.score > hiScore) {
+				hiScore = carObject.score;
+				localStorage.setItem("hiscore", carObject.score);
+				hiScoreReached = true;
 			}
 		}
 	}
-	if(stavHry=="gameover"){
-		outro.play();
-		if(Key.space == true){
-			nowHi=false;
+	if (gameState == "gameover") {
+		audioOutro.play();
+		if (Key.space == true) {
 			Key.space = false;
-			stavHry = "instructions";
-			outro.pause();
-			bangr.currentTime = 0;
-			car.score=0;
-			car.gun=0;
-			speed=povodnaSpeed;
-			car.x= canvas.width/2-35;
-			car.y= canvas.height-158;
-			for(i in itemy){
-				itemy.splice(i);
-			}
-			for(i in gunshots){
-				gunshots.splice(i);
-			}
-			inItemy(pocetItemov);
+			gameState = "instructions";
+			audioOutro.pause();
+			initializeGame()
 		}
 	}
 }

@@ -9,6 +9,8 @@ Source code & music: Daniel Kováč
 
 Graphics: awesome people from Internet, edited by Daniel Kováč
 
+`Only works well in Chrome based browsers because of weak Firefox canvas performance and unspecified Edge error.`
+
 ## Controls:
 `W` or `↑` 	- UP
 

@@ -1,4 +1,3 @@
-//Ovladanie
 var Key = {
 	up: false,
 	down: false,
