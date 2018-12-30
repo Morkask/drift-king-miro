@@ -14,19 +14,19 @@ function render() {
 		if (selectedCar == "FORD ESCORT") {
 			guiContext.fillStyle = "blue";
 			var carIMG = new Image();
-			carIMG.src = 'img/objects/carBLUE/car.png';
+			carIMG.src = 'img/objects/cars/ford/car.png';
 			var carLOGO = new Image();
 			carLOGO.src = 'img/logoFORD.png';
 		} else if (selectedCar == "FELICIA PICKUP") {
 			guiContext.fillStyle = "white";
 			var carIMG = new Image();
-			carIMG.src = 'img/objects/carRED/car.png';
+			carIMG.src = 'img/objects/cars/felicia/car.png';
 			var carLOGO = new Image();
 			carLOGO.src = 'img/logoSKODA.png';
 		} else {
 			guiContext.fillStyle = "red";
 			var carIMG = new Image();
-			carIMG.src = 'img/objects/carBLACK/car.png';
+			carIMG.src = 'img/objects/cars/jawa/car.png';
 			var carLOGO = new Image();
 			carLOGO.src = 'img/logoJAWA.png';
 		}

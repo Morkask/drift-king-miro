@@ -51,31 +51,31 @@ class Car {
 	render() {
 		if (selectedCar == "FORD ESCORT") {
 			this.carIMG = new Image();
-			this.carIMG.src = 'img/objects/carBLUE/car.png';
+			this.carIMG.src = 'img/objects/cars/ford/car.png';
 			this.carIMGb = new Image();
-			this.carIMGb.src = 'img/objects/carBLUE/car-breaks.png';
+			this.carIMGb.src = 'img/objects/cars/ford/car-breaks.png';
 			this.carIMGl = new Image();
-			this.carIMGl.src = 'img/objects/carBLUE/car-left.png';
+			this.carIMGl.src = 'img/objects/cars/ford/car-left.png';
 			this.carIMGr = new Image();
-			this.carIMGr.src = 'img/objects/carBLUE/car-right.png';
+			this.carIMGr.src = 'img/objects/cars/ford/car-right.png';
 		} else if (selectedCar == "FELICIA PICKUP") {
 			this.carIMG = new Image();
-			this.carIMG.src = 'img/objects/carRED/car.png';
+			this.carIMG.src = 'img/objects/cars/felicia/car.png';
 			this.carIMGb = new Image();
-			this.carIMGb.src = 'img/objects/carRED/car-breaks.png';
+			this.carIMGb.src = 'img/objects/cars/felicia/car-breaks.png';
 			this.carIMGl = new Image();
-			this.carIMGl.src = 'img/objects/carRED/car-left.png';
+			this.carIMGl.src = 'img/objects/cars/felicia/car-left.png';
 			this.carIMGr = new Image();
-			this.carIMGr.src = 'img/objects/carRED/car-right.png';
+			this.carIMGr.src = 'img/objects/cars/felicia/car-right.png';
 		} else if (selectedCar == "JAWA MOSQUIT") {
 			this.carIMG = new Image();
-			this.carIMG.src = 'img/objects/carBLACK/car.png';
+			this.carIMG.src = 'img/objects/cars/jawa/car.png';
 			this.carIMGb = new Image();
-			this.carIMGb.src = 'img/objects/carBLACK/car-breaks.png';
+			this.carIMGb.src = 'img/objects/cars/jawa/car-breaks.png';
 			this.carIMGl = new Image();
-			this.carIMGl.src = 'img/objects/carBLACK/car-left.png';
+			this.carIMGl.src = 'img/objects/cars/jawa/car-left.png';
 			this.carIMGr = new Image();
-			this.carIMGr.src = 'img/objects/carBLACK/car-right.png';
+			this.carIMGr.src = 'img/objects/cars/jawa/car-right.png';
 		}
 		if (this.isBreaking) {
 			objectsContext.drawImage(this.carIMGb, this.x, this.y, this.width, this.height);
