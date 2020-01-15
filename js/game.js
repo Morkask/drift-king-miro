@@ -2,7 +2,6 @@
  * CANVASES
  */
 var canvas = document.getElementById('objects');
-
 var objectsContext = canvas.getContext('2d');
 var guiContext = document.getElementById('gui').getContext('2d');
 
@@ -49,7 +48,7 @@ var gunShots = [];
 function initializeGame() {
 	hiScoreReached = false;
 	audioMain.currentTime = 0;
-	speed = initialGameSpeed;
+	gameSpeed = initialGameSpeed;
 	gameObjectsPositions = [false, false, false, false, false, false, false, false, false, false];
 	gameObjects = [];
 	carObject = new Car();
