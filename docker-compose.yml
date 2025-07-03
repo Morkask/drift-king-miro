@@ -1,0 +1,7 @@
+name: drift-king-miro
+services:
+  app:
+    build: .
+    ports:
+      - "36987:80"
+    restart: always
